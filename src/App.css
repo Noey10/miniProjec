@@ -1,0 +1,158 @@
+body{
+  background-color: #172b4d;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  font-family: maaja;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px auto auto auto;
+  grid-template-areas: 
+    'header header'
+    'leftbar leftbar'
+    'rigthbar rigthbar'
+    'footer footer';
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background-color: rgba(0, 0, 0,0.1);
+}
+
+.leftbar {
+  grid-area: leftbar;
+}
+
+.rigthbar {
+  grid-area: rigthbar;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+form {
+  margin-top: 30px;
+  padding-left: 500px;
+}
+
+.rigth {
+  padding-left: 500px;
+}
+
+label {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+input {
+  border-radius: 44px !important;
+  width: 50% !important;
+  height: 40px;
+  padding: 0px 15px !important;
+  color: #000;
+}
+
+input:focus {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+.button input{
+  background-color: #3f51b5;
+
+  color: #000;
+  font-size: 16px;
+  border-radius: 44px;
+  cursor: pointer;
+  border: 1px solid #3f51b5;
+  margin-bottom: 40px;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+  font-size: 2rem;
+}
+
+.button input:hover {
+  background-color: #fff;
+  transform: translate(0px, -2px);
+  color: #5364c3;
+  box-shadow: 0px 15px 30px -12px rgba(255, 255, 255, 0.2);
+}
+
+.button input:focus {
+  background-color: #32408f;
+}
+
+.button input:focus:hover {
+  color: white;
+}
+
+.button input:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}
+
+.button input:disabled:hover {
+  box-shadow: none;
+  transform: translate(0, 0);
+}
+
+.bmi {
+  background-color: pink;
+  width: 540px;
+  height: auto;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.status {
+  padding: 0px;
+  font-size: 4rem;
+}
+
+.red {
+  background-color: #274881 !important;
+  color: white;
+  border-radius: 5px;
+  width: 1020px;
+  height: auto;
+  align-items: center;
+  margin-left: 225px;
+}
+
+.Dara {
+  padding: 10px 10px 10px 10px;
+}
+
+.messager {
+  font-size: 22px;
+}
